@@ -33,7 +33,7 @@
   <div id="main_container">
     
     <div id="header">
-      <div class="header_top_text"><?php echo stripslashes(stripslashes(get_option($shortname.'_header_top_text','Architekt Free WordPress Theme is clean simple and unique. Design to showcase your architectual portfolio'))); ?></div>
+      <div class="header_top_text"><?php echo stripslashes(stripslashes(get_option($shortname.'_header_top_text','Camille Sifferlen Architecture'))); ?></div>
       
       <?php if(get_option($shortname.'_custom_logo_url','') != "") { ?>
         <a href="<?php bloginfo('url'); ?>"><img src="<?php echo stripslashes(stripslashes(get_option($shortname.'_custom_logo_url',''))); ?>" class="logo" /></a>
@@ -42,7 +42,7 @@
       <?php } ?>
       
       <div class="header_text_cont">
-        <?php echo stripslashes(stripslashes(get_option($shortname.'_header_right_text','Welcome to our online portfolio, we are small group of  passionated designers, looking to change and create amazing digital images to inspire others to follow in our steps. We have passion and motivation.'))); ?>
+        <?php echo stripslashes(stripslashes(get_option($shortname.'_header_right_text','Welcome to my online portfolio, I am a graduate architect, thriving on joining a multicultural team in Australia to make a real contribution to the office and broaden my architectural horizons.'))); ?>
       </div><!--//header_text_cont-->
       
       <div class="clear"></div>
