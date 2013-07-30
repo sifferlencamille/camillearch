@@ -52,7 +52,7 @@ class nggImage{
 		//This must be an object
 		$gallery = (object) $gallery;
 
-	$cdnURL = "https://console.aws.amazon.com/s3/home?region=us-west-2";	// Build up the object
+	$cdnURL = "https://s3-eu-west-1.amazonaws.com/csarchitecture2013";	// Build up the object
 		foreach ($gallery as $key => $value)
 			$this->$key = $value ;
 		
