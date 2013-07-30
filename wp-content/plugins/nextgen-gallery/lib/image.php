@@ -52,7 +52,7 @@ class nggImage{
 		//This must be an object
 		$gallery = (object) $gallery;
 
-		// Build up the object
+	$cdnURL = "https://console.aws.amazon.com/s3/home?region=us-west-2";	// Build up the object
 		foreach ($gallery as $key => $value)
 			$this->$key = $value ;
 		
@@ -64,8 +64,8 @@ class nggImage{
 		$this->previewpic	= $gallery->previewpic;
 	
 		// set urls and paths
-		$this->imageURL		= site_url() . '/' . $this->path . '/' . $this->filename;
-		$this->thumbURL 	= site_url() . '/' . $this->path . '/thumbs/thumbs_' . $this->filename;
+		$this->imageURL		= $cdnURL . '/' . $this->path . '/' . $this->filename;
+		$this->thumbURL 	= $cdnURL . '/' . $this->path . '/thumbs/thumbs_' . $this->filename;
 		$this->imagePath	= WINABSPATH.$this->path . '/' . $this->filename;
 		$this->thumbPath	= WINABSPATH.$this->path . '/thumbs/thumbs_' . $this->filename;
         $this->meta_data	= unserialize($this->meta_data);
